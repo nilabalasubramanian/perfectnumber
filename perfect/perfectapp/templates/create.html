@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+{% extends 'base.html'%}
+{% block context %}
+<ul>
+    {% for divisor in divisors %}
+      <li>{{divisor}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+</body>
+</html>

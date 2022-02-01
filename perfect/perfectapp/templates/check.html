@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validating</title>
+</head>
+<body>
+  {% extends 'base.html' %}
+  {% block context %}
+  <h1>Perfect</h1>
+   <ul>
+       {% for a in perfect %}
+       <li>{{a}}</li>
+       {% endfor %}
+   </ul>
+  <h1>Abundant</h1>
+   <ul>
+       {% for b in abundant %}
+       <li>{{b}}</li>
+       {% endfor %}
+    </ul>
+  <h1>Deficient</h1>
+  <ul>
+       {% for c in deficient %}
+       <li>{{c}}</li>
+       {% endfor %}
+   </ul>
+  {% endblock %}
+</body>
+</html>
